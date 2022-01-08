@@ -1,0 +1,253 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Sequelize",
+		"_postman_id": "d3ec2195-b0a3-099f-d8f1-b38a022be0ea",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:4002/loginUser",
+			"request": {
+				"url": "http://localhost:4002/loginUser",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"KaushikRathod@gmail.com\",\n\t\"password\":\"123456\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/registration",
+			"request": {
+				"url": "http://localhost:4002/registration",
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Sagar",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "SagarJaviya@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "confirm_password",
+							"value": "123456",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/viewProfile",
+			"request": {
+				"url": "http://localhost:4002/viewProfile",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNjE5MzM1fQ.Q4SHqGPhTsaBumlCJFJcZxIwQYkPkMT5bm_KdndDgdE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/updateProfile",
+			"request": {
+				"url": "http://localhost:4002/updateProfile",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNjE5MzM1fQ.Q4SHqGPhTsaBumlCJFJcZxIwQYkPkMT5bm_KdndDgdE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Kaushik Rathod",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "KaushikRathod@gmail.com",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "Male",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"value": "",
+							"description": "",
+							"type": "file"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/resetPassword",
+			"request": {
+				"url": "http://localhost:4002/resetPassword",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNjE5MzM1fQ.Q4SHqGPhTsaBumlCJFJcZxIwQYkPkMT5bm_KdndDgdE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"current_password\":\"123456\",\n\t\"password\":\"111111\",\n\t\"confirm_password\":\"111111\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/createAddressBook",
+			"request": {
+				"url": "http://localhost:4002/createAddressBook",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNTU1NTEzfQ._NEcMp3TZr3iGurArfjGSoRywmyQvSil0-cCAcnaWkc",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\n\t\"title\":\"Title\",\n\t\"addressLine1\":\"wsdfguhihgf\",\n\t\"addressLine2\":\"oihgdrfgvbhjnk\",\n\t\"country\":\"India\",\n\t\"state\":\"Gujarat\",\n\t\"city\":\"Rajkot\",\n\t\"pinCode\":\"360004\"\n},{\n\t\"title\":\"Beble\",\n\t\"addressLine1\":\"oiuyrdtfg\",\n\t\"addressLine2\":\"xdcfgvbujiuyt\",\n\t\"country\":\"India\",\n\t\"state\":\"Punjab\",\n\t\"city\":\"Amritsar\",\n\t\"pinCode\":\"560004\"\t\n}\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/readAddressBook/2",
+			"request": {
+				"url": "http://localhost:4002/readAddressBook",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNTU1NTEzfQ._NEcMp3TZr3iGurArfjGSoRywmyQvSil0-cCAcnaWkc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/updateAddressBook/1",
+			"request": {
+				"url": "http://localhost:4002/updateAddressBook/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNTU1NTEzfQ._NEcMp3TZr3iGurArfjGSoRywmyQvSil0-cCAcnaWkc",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Novel\",\n    \"addressLine1\": \"oiuyrdtfg\",\n    \"addressLine2\": \"xdcfgvbujiuyt\",\n    \"country\": \"India\",\n    \"state\": \"Gujarat\",\n    \"city\": \"Rajkot\",\n    \"pinCode\": 360004\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:4002/deleteAddressBook/3",
+			"request": {
+				"url": "http://localhost:4002/deleteAddressBook/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IkthdXNoaWtSYXRob2RAZ21haWwuY29tIiwiaWF0IjoxNjQxNTU1NTEzfQ._NEcMp3TZr3iGurArfjGSoRywmyQvSil0-cCAcnaWkc",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
